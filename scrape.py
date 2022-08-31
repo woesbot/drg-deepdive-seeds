@@ -5,9 +5,10 @@ import json
 
 DRG_API  = 'https://drg.ghostship.dk/events'
 STEAMCMD = 'https://api.steamcmd.net/v1/info'
-UA_AGENT = 'FSD/main-CL'
+
 
 DRG_ID = 548430
+DRG_UA = 'FSD/main-CL'
 DD_START = datetime.datetime(2019, 9, 26)
 
 
@@ -44,8 +45,8 @@ def request_build():
 def request_seeds():
     """ Return weekly and deepdive seeds from API """
 
-    wk_seed = requests.get(f'{DRG_API}/weekly')
-    dd_seed = requests.get(f'{DRG_API}/deepdive')
+    wk_seed = requests.get(f'{DRG_API}/weekly', headers={'User-Agent': DRG_UA})
+    dd_seed = requests.get(f'{DRG_API}/deepdive', headers={'User-Agent': DRG_UA})
 
     if not (wk_seed.status_code and dd_seed.status_code == 200):
         print('[!] Error retrieving seed information from DRG...')
