@@ -6,7 +6,6 @@ import json
 DRG_API  = 'https://drg.ghostship.dk/events'
 STEAMCMD = 'https://api.steamcmd.net/v1/info'
 
-
 DRG_ID = 548430
 DRG_UA = 'FSD/main-CL'
 DD_START = datetime.datetime(2019, 9, 26)
