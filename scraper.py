@@ -47,7 +47,7 @@ def request_seeds():
     wk_seed = requests.get(f'{DRG_API}/weekly', headers={'User-Agent': DRG_UA})
     dd_seed = requests.get(f'{DRG_API}/deepdive', headers={'User-Agent': DRG_UA})
 
-    if not (wk_seed.status_code and dd_seed.status_code == 200):
+    if not (wk_seed.status_code == 200 and dd_seed.status_code == 200):
         print('[!] Error retrieving seed information from DRG...')
         print(f'\t- Weekly status: {wk_seed.status_code}')
         print(f'\t- Deepdive status: {dd_seed.status_code}')
