@@ -77,7 +77,13 @@ def main():
 
         print(f'[+] Adding week {dd_week} to week entries...')
         seeds[str(dd_week)] = {'seeds': drg_seeds, 'build': drg_build}
-        json.dump(seeds, seedlist, indent=2)
+
+        sorted_dict = {}
+
+        for key in sorted(seeds, reverse=True):
+            sorted_dict[key] = seeds[key]
+
+        json.dump(sorted_dict, seedlist, indent=2)
 
 if __name__ == '__main__':
     main()
