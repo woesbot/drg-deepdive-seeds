@@ -78,8 +78,10 @@ def main():
         print(f'[+] Adding week {dd_week} to week entries...')
         seeds[str(dd_week)] = {'seeds': drg_seeds, 'build': drg_build}
 
+        # sort dict in descending order so we don't have to scroll to 
+        # the bottom to find new deep dives.
         sorted_dict = {}
-
+        
         for key in sorted(seeds, reverse=True):
             sorted_dict[key] = seeds[key]
 
