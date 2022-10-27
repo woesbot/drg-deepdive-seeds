@@ -1,4 +1,22 @@
 {
+  "162": {
+    "seeds": {
+      "deepdive": {
+        "Seed": 3847251919,
+        "SeedV2": 2495444811,
+        "ExpirationTime": "2022-11-03T11:00:00Z"
+      },
+      "weekly": {
+        "Seed": 3974361027,
+        "ExpirationTime": "2022-11-03T11:00:00Z"
+      }
+    },
+    "build": {
+      "build_id": "9650973",
+      "manifest": "3436815848946255772",
+      "updated_at": "2022-10-06T15:27:26"
+    }
+  },
   "161": {
     "seeds": {
       "deepdive": {
