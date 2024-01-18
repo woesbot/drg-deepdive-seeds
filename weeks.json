@@ -1,4 +1,26 @@
 {
+  "226": {
+    "seeds": {
+      "deepdive": {
+        "Seed": 1851018366,
+        "SeedV2": 1945932400,
+        "ExpirationTime": "2024-01-25T11:00:00Z"
+      },
+      "weekly": {
+        "Seed": 1636244942,
+        "ExpirationTime": "2024-01-25T11:00:00Z"
+      }
+    },
+    "build": {
+      "build_id": "13091690",
+      "manifest": {
+        "download": "2907258192",
+        "gid": "6434448917101773992",
+        "size": "3325085628"
+      },
+      "updated_at": "2024-01-04T14:16:28"
+    }
+  },
   "225": {
     "seeds": {
       "deepdive": {
